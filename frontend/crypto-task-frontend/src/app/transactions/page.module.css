@@ -1,0 +1,165 @@
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.error {
+  color: #e53e3e;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  background-color: #fed7d7;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+.summaryContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.summaryCard {
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  text-align: center;
+}
+
+.summaryCard h3 {
+  margin: 0;
+  margin-bottom: 0.75rem;
+  color: #555;
+  font-size: 1rem;
+}
+
+.summaryValue {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.transactionsContainer {
+  overflow-x: auto;
+}
+
+.transactionsTable {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.transactionsTable th, 
+.transactionsTable td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.transactionsTable th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #444;
+  cursor: pointer;
+}
+
+.transactionsTable th:hover {
+  background-color: #e9e9e9;
+}
+
+.transactionsTable tr:last-child td {
+  border-bottom: none;
+}
+
+.transactionsTable tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.transactionSymbol {
+  font-weight: bold;
+  color: #333;
+}
+
+.transactionType {
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: center;
+  width: fit-content;
+}
+
+.typeBuy {
+  background-color: rgba(76, 175, 80, 0.2);
+  color: #2e7d32;
+}
+
+.typeSell {
+  background-color: rgba(244, 67, 54, 0.2);
+  color: #c62828;
+}
+
+.profit {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.loss {
+  color: #c62828;
+  font-weight: bold;
+}
+
+.transactionAmount, 
+.transactionPrice, 
+.transactionValue {
+  font-family: monospace;
+  font-size: 0.95rem;
+}
+
+.transactionValue {
+  font-weight: bold;
+}
+
+.loadingContainer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.noTransactions {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.noTransactions p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .summaryContainer {
+    flex-direction: column;
+  }
+  
+  .transactionsTable th, 
+  .transactionsTable td {
+    padding: 0.75rem;
+  }
+}

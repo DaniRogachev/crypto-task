@@ -1,0 +1,30 @@
+# Backend Requirements
+# Java 17
+spring-boot-starter-web=3.4.4
+spring-boot-starter-data-jdbc
+spring-boot-starter-data-jpa
+spring-boot-starter-validation
+spring-boot-starter-websocket
+jackson-databind
+java-websocket=1.5.4
+lombok
+mysql-connector-j
+
+# Frontend Requirements
+# Node.js 18+ and npm/yarn
+next=15.2.4
+react=19.0.0
+react-dom=19.0.0
+@stomp/stompjs=7.1.0
+sockjs-client=1.6.1
+axios=1.8.4
+chart.js=4.4.8
+react-chartjs-2=5.3.0
+@headlessui/react=2.2.0
+
+# Development Dependencies
+eslint=9
+eslint-config-next=15.2.4
+
+# System Requirements
+# MySQL 8.0+
